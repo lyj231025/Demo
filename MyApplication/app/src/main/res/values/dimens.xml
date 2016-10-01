@@ -2,4 +2,32 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!--默认分割线条的高度-->
+    <dimen name="line_divider_height">1dip</dimen>
+    <!--常用的margin或padding的值-->
+    <dimen name="space_ss">2dip</dimen>
+    <dimen name="space_s">4dip</dimen>
+    <dimen name="space_sm">6dip</dimen>
+    <dimen name="space_mm">8dip</dimen>
+    <dimen name="space_m">10dip</dimen>
+    <dimen name="space_ml">12dip</dimen>
+    <dimen name="space_ll">14dip</dimen>
+    <dimen name="space_l">16dip</dimen>
+    <dimen name="space_xx">18dip</dimen>
+    <dimen name="space_xl">20dip</dimen>
+    <dimen name="space_xxl">32dip</dimen>
+    <dimen name="space_xxxl">48dip</dimen>
+    <dimen name="space_xxxx">64dip</dimen>
+    <dimen name="space_smlx">72dip</dimen>
+
+    <!--常用字体的值-->
+    <dimen name="txt_s">8sp</dimen>
+    <dimen name="txt_m">10sp</dimen>
+    <dimen name="txt_l">14sp</dimen>
+    <dimen name="txt_x">16sp</dimen>
+    <dimen name="txt_xl">18sp</dimen>
+    <dimen name="txt_xxl">20sp</dimen>
+    <dimen name="txt_xxxl">24sp</dimen>
 </resources>
