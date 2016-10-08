@@ -3,7 +3,8 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
-
+    <!--默认导航栏高度-->
+    <dimen name="top_bar_height">50dip</dimen>
     <!--默认分割线条的高度-->
     <dimen name="line_divider_height">1dip</dimen>
     <!--常用的margin或padding的值-->
@@ -30,4 +31,5 @@
     <dimen name="txt_xl">18sp</dimen>
     <dimen name="txt_xxl">20sp</dimen>
     <dimen name="txt_xxxl">24sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 </resources>

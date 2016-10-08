@@ -1,4 +1,4 @@
-package com.lyj.myapplication.activity;
+package com.lyj.myapplication.activity.main;
 
 import android.app.ListActivity;
 import android.content.Intent;

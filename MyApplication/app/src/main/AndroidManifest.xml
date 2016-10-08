@@ -8,16 +8,25 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.SpalashActivity">
+        <activity android:name=".activity.main.SpalashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".activity.MainActivity">
+        <activity android:name=".activity.main.MainActivity">
         </activity>
-        <activity android:name=".activity.DemoListActivity">
+        <activity android:name=".activity.main.DemoListActivity">
+        </activity>
+        <activity
+            android:name=".activity.chat.ChatMainActivity"
+            android:label="@string/title_activity_chat_main"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".activity.chat.SplashChatActivity">
+        </activity>
+        <activity android:name=".activity.LoginActivity">
         </activity>
     </application>
 
