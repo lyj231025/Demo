@@ -9,7 +9,6 @@ public class ChatMainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat_main);
-        //停留三秒进入主界面
     }
 
 }
