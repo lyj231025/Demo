@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.lyj.myapplication.R;
 import com.lyj.myapplication.activity.chat.ChatMainActivity;
+import com.lyj.myapplication.service.IMService;
 import com.lyj.myapplication.util.Constants;
 import com.lyj.myapplication.util.ThreadUtils;
 import com.lyj.myapplication.util.ToastUtils;
@@ -72,6 +73,7 @@ public class LoginActivity extends AppCompatActivity {
                     finish();
                     Intent intent = new Intent(LoginActivity.this, ChatMainActivity.class);
                     startActivity(intent);
+                    IMService.conn = conn;//保存变量
                 } catch (XMPPException e) {
                     e.printStackTrace();
                     ToastUtils.ShowToast(LoginActivity.this, "登录失败");

@@ -9,10 +9,26 @@
     tools:context="com.lyj.myapplication.activity.chat.ChatMainActivity">
 
     <TextView
+        android:id="@+id/main_tv_title"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/colorPrimaryDark"
         android:gravity="center"
-        android:text="主界面"/>
+        android:text="会话"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_xxl"/>
 
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </android.support.v4.view.ViewPager>
 
+    <LinearLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:orientation="horizontal">
+    </LinearLayout>
 </LinearLayout>
