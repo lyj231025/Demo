@@ -7,8 +7,14 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.lyj.myapplication.activity.TestActivity;
+import com.lyj.myapplication.activity.test.ClickTestActivity;
+
 public class DemoListActivity extends ListActivity {
-    ClassAndName[] mClassAndNames = {};
+    ClassAndName[] mClassAndNames = {
+            new ClassAndName(ClickTestActivity.class,"测试事件"),
+            new ClassAndName(TestActivity.class,"测试数据库")
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

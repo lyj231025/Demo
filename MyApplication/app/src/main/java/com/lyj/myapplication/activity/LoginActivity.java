@@ -31,6 +31,7 @@ public class LoginActivity extends AppCompatActivity {
     EditText etPassword;
     @BindView(R.id.btn_login)
     Button btnLogin;
+    public static final String SERVICENAME = "itheima.com";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
