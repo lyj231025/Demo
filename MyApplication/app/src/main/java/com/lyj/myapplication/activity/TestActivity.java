@@ -9,6 +9,7 @@ import com.lyj.myapplication.R;
 import com.lyj.myapplication.provider.UserProvider;
 import com.lyj.myapplication.util.ThreadUtils;
 import com.lyj.myapplication.util.ToastUtils;
+import com.lyj.myapplication.view.ToggleView;
 
 public class TestActivity extends AppCompatActivity {
 
@@ -17,6 +18,14 @@ public class TestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
         initData();
+        initVeiw();
+    }
+
+    private void initVeiw() {
+       ToggleView tog_view = (ToggleView) findViewById(R.id.tog_view);
+        tog_view.setSwitchDrawableBackgroundResource(R.mipmap.switch_background);
+        tog_view.setSwitchDrawableSlideMenuResource(R.mipmap.slide_button);
+        tog_view.setSwichState(false);
     }
 
     private void initData() {
@@ -36,8 +45,10 @@ public class TestActivity extends AppCompatActivity {
             @Override
             public void run() {
                 Cursor cursor = getContentResolver().query(UserProvider.URI_MATCH, null, null, null, null);
-                String id = cursor.getString(cursor.getColumnIndex("_id"));
-                ToastUtils.ShowToast(TestActivity.this,id);
+                while (cursor.moveToNext()){
+                    String id = cursor.getString(cursor.getColumnIndex("_id"));
+                    ToastUtils.ShowToast(TestActivity.this,id);
+                }
             }
         });
     }

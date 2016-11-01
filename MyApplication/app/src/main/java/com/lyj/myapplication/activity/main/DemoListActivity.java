@@ -7,13 +7,15 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.lyj.myapplication.activity.LoginActivity;
 import com.lyj.myapplication.activity.TestActivity;
 import com.lyj.myapplication.activity.test.ClickTestActivity;
 
 public class DemoListActivity extends ListActivity {
     ClassAndName[] mClassAndNames = {
             new ClassAndName(ClickTestActivity.class,"测试事件"),
-            new ClassAndName(TestActivity.class,"测试数据库")
+            new ClassAndName(TestActivity.class,"测试数据库"),
+            new ClassAndName(LoginActivity.class,"登录")
     };
 
     @Override
@@ -38,10 +40,9 @@ public class DemoListActivity extends ListActivity {
             this.name = name;
         }
 
-        public String getName() {
+        @Override
+        public String toString() {
             return name;
         }
-
-
     }
 }

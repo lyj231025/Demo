@@ -26,7 +26,7 @@
         </activity>
         <activity android:name=".activity.chat.SplashChatActivity">
         </activity>
-        <activity android:name=".activity.main.DemoListActivity">
+        <activity android:name="com.lyj.myapplication.activity.LoginActivity">
         </activity>
         <activity android:name=".activity.TestActivity">
         </activity>

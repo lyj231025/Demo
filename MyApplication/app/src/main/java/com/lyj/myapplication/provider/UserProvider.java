@@ -72,11 +72,25 @@ public class UserProvider extends ContentProvider {
 
     @Override
     public int delete(Uri uri, String selection, String[] selectionArgs) {
+        int code = mUriMatcher.match(uri);
+        switch (code){
+            case INDICATOR:
+                SQLiteDatabase db = mUserHelper.getWritableDatabase();
+                int deleteId = db.delete(UserProvider.TABLE_NAME, selection, selectionArgs);
+                break;
+        }
         return 0;
     }
 
     @Override
     public int update(Uri uri, ContentValues values, String selection, String[] selectionArgs) {
+        int code = mUriMatcher.match(uri);
+        switch (code){
+            case INDICATOR:
+                SQLiteDatabase db = mUserHelper.getReadableDatabase();
+                int updateId = db.update(UserProvider.TABLE_NAME, values, selection, selectionArgs);
+                break;
+        }
         return 0;
     }
 
